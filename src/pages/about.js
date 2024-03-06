@@ -57,8 +57,8 @@ const about = () => {
                 Biography
               </h2>
               <p className="font-medium text-lg">
-                I'm Abhoy Sarkar, a computer science and engineering student
-                pursuing a B.Tech. I work diligently, have a growing
+                I&apos;m Abhoy Sarkar, a computer science and engineering
+                student pursuing a B.Tech. I work diligently, have a growing
                 understanding of data structures and algorithms, and have a keen
                 interest in both web development and machine learning. Explore
                 my latest projects and articles, showcasing my works on machine
@@ -66,15 +66,15 @@ const about = () => {
               </p>
               <p className="my-4 font-medium text-lg">
                 I believe that design is about more than just making things look
-                pretty,it's about solving problems and creating intuitive,
+                pretty,it&apos;s about solving problems and creating intuitive,
                 enjoyable experiences for users.
               </p>
               <p className="font-medium text-lg">
-                Whether I'm working on a website, mobile app, a machine learning
-                model or other digital product, I bring my commitment to design
-                excellence and user-centered thinking to every project I work
-                on. I look forward to the opportunity to bring my skills and
-                passion to your next project.
+                Whether I&apos;m working on a website, mobile app, a machine
+                learning model or other digital product, I bring my commitment
+                to design excellence and user-centered thinking to every project
+                I work on. I look forward to the opportunity to bring my skills
+                and passion to your next project.
               </p>
             </div>
             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-4 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
