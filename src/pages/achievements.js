@@ -156,6 +156,12 @@ const articles = () => {
               link="https://www.coursera.org/account/accomplishments/certificate/U33U3Z5LLM3N"
               img={aws_cert}
             />
+            <Article
+              title="Migrating to the AWS Cloud"
+              date="2024"
+              link="https://www.coursera.org/account/accomplishments/verify/KR8FAJZ6UBF9"
+              img={aws_cert}
+            />
           </ul>
         </Layout>
       </main>
