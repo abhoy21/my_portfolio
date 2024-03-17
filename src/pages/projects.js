@@ -5,6 +5,7 @@ import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
+import project1 from "../../public/images/projects/apple_ui.png";
 import project2 from "../../public/images/projects/Sensei.png";
 import project4 from "../../public/images/projects/Sloka.png";
 import { motion } from "framer-motion";
@@ -135,15 +136,15 @@ const projects = () => {
             className="mb-16 lg:text-7xl sm:mb-8 sm:!text-6xl xs:text-4xl"
           />
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-16 lg:gap-8 md:gap-y-24 sm:gap-x-0">
-            {/* <div className="col-span-12">
+            <div className="col-span-12">
               <FeaturedProject
-                title="A PRIVACY PRESERVING FEDERATED LEARNING"
+                title="Designed the Interactive Apple UI"
                 img={project1}
-                link=""
-                github="/"
+                link="https://apple-ui-khaki.vercel.app/"
+                github="https://github.com/abhoy21/apple_ui.git"
                 type="Featured Project"
               />
-            </div> */}
+            </div>
             <div className="col-span-6 sm:col-span-12">
               <Project
                 title="Sloka"
