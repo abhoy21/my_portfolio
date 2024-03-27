@@ -7,7 +7,8 @@ import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
 import project1 from "../../public/images/projects/apple_ui.png";
 import project2 from "../../public/images/projects/Sensei.png";
-import project4 from "../../public/images/projects/Sloka.png";
+import project3 from "../../public/images/projects/Sloka.png";
+import project4 from "../../public/images/projects/bytedrop.png";
 import { motion } from "framer-motion";
 import TransitionEffect from "@/components/hooks/TransitionEffect";
 
@@ -148,7 +149,7 @@ const projects = () => {
             <div className="col-span-6 sm:col-span-12">
               <Project
                 title="Sloka"
-                img={project4}
+                img={project3}
                 link="https://sloka-frontend.vercel.app/"
                 github="https://github.com/abhoy21/sloka_backend.git"
                 type="Featured Project"
@@ -163,44 +164,15 @@ const projects = () => {
                 type="Featured Project"
               />
             </div>
-            {/* <div className="col-span-12">
+            <div className="col-span-12">
               <FeaturedProject
-                title="QNA"
+                title="Developed a seemless File Sharing Web App"
                 img={project4}
-                summary="📢 Introducing QNA - The Ultimate Online Form Builder! 🌐✏️
-
-                Are you tired of spending hours creating and managing forms for your business? Look no further! Say hello to QNA, the web app that will revolutionize your form-building experience! 🚀
-                
-                QNA offers a user-friendly and intuitive interface that allows you to effortlessly create stunning forms for any purpose. Whether you need lead generation forms, surveys, event registrations, or customer feedback forms, QNA has got you covered! 💪
-                
-                With QNA, you can customize your forms with a wide range of options such as multiple-choice questions, dropdown menus, file uploads, and more. You can even personalize your forms to ensuring a seamless experience for your users. 🎨
-                
-                But that's not all! QNA also provides powerful analytics and reporting features, giving you valuable insights into form submissions, conversion rates, and user behavior. 📊📈"
-                link="https://qna-drab.vercel.app/"
-                github="https://github.com/yourflickbong/qna"
-                type="Featured Project"
-              />
-              t
-            </div> */}
-            {/*
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="Crypto Screener Application"
-                img={project2}
-                link="/"
-                github="/"
+                link="https://bytedrop.vercel.app/"
+                github="https://github.com/abhoy21/bytedrop.git"
                 type="Featured Project"
               />
             </div>
-            <div className="col-span-6 sm:col-span-12">
-              <Project
-                title="Crypto Screener Application"
-                img={project2}
-                link="/"
-                github="/"
-                type="Featured Project"
-              />
-            </div> */}
           </div>
         </Layout>
       </main>
