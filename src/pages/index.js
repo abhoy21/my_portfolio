@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
-import profilepic from "../../public/images/profile/view-3d-man-with-tech-device__1_-removebg-preview.png";
+import profilepic from "../../public/images/profile/home_img.svg";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { ContactIcon, LinkArrow } from "@/components/Icons";
@@ -25,7 +25,7 @@ export default function Home() {
               <Image
                 src={profilepic}
                 alt="AbhoySarkar"
-                className="w-full h-auto lg:hidden md:inline-block md:w-full"
+                className="w-[90%] h-auto lg:hidden md:inline-block md:w-full"
                 priority
                 si
               />
