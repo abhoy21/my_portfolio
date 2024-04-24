@@ -180,8 +180,8 @@ const projects = () => {
               <Project
                 title='console.Blog()'
                 img={project5}
-                link='https://console-blog-frontend.vercel.app/'
-                github='https://github.com/abhoy21/console_blog_backend.git'
+                link='https://console-blog-mern-frontend.vercel.app/'
+                github='https://github.com/abhoy21/console_blog_mern.git'
                 type='Featured Project'
               />
             </div>
