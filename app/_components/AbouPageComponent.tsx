@@ -82,8 +82,8 @@ const About: React.FC = () => {
                 and passion to your next project.
               </p>
             </div>
-            <div className='relative left-20 h-max rounded-2xl border-2 border-solid border-black bg-white p-4 md:col-span-1'>
-              <div className='absolute top-0 -right-2 -z-10 w-[102%] h-[104%] rounded-[2rem] bg-black' />
+            <div className='relative left-20 h-max rounded-2xl border-2 border-solid border-black bg-white p-4 md:col-span-1 md:mt-14'>
+              <div className='absolute top-0 -right-4 -z-10 w-[104%] h-[104%] rounded-[2rem] bg-black' />
               <Image
                 src={profilePic}
                 alt='Abhoy Sarkar'
