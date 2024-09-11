@@ -114,7 +114,7 @@ const About: React.FC = () => {
                   <AnimatedNumbers values={2} />+
                 </span>
                 <h2 className='text-xl font-medium capitalize text-black/75 text-center md:text-lg sm:text-base xs:text-sm'>
-                  Years of Experience
+                  Professional Certifications
                 </h2>
               </div>
             </div>
