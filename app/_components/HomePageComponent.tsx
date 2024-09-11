@@ -37,16 +37,16 @@ const HomePageComponent: React.FC = () => {
 
               <AnimatedText
                 text="Hi! I'm Abhoy Sarkar"
-                className='!text-6xl xl:!text-5xl lg:!text-6xl md:!text-5xl sm:!text-3xl pb-2 text-left'
+                className='lg:!text-6xl md:!text-5xl !text-3xl pb-2 text-center md:text-left '
               />
-              <p className='my-4 text-base font-medium md:text-sm sm:text-xs'>
+              <p className='my-4 text-base font-medium md:text-md sm:text-xs text-justify text-gray-500 md:text-gray-700'>
                 As a machine learning enthusiast and a full-stack developer who
                 is constantly learning, I am dedicated to turning ideas into
                 innovative web applications. Explore my latest projects and
                 achievements, showcasing my works on machine learning and web
                 development.
               </p>
-              <div className='flex flex-col lg:flex-row items-center lg:items-start lg:space-x-4'>
+              <div className='flex md:flex-row items-center md:items-start lg:space-x-4'>
                 <Link
                   href='https://drive.google.com/file/d/1X3IyFbPGfNw6vlDHOxSjYXaq5k2CLGu0/view?usp=sharing'
                   target={"_blank"}
@@ -59,7 +59,7 @@ const HomePageComponent: React.FC = () => {
                 <Link
                   href='mailto:sarkar.ab07@gmail.com'
                   target={"_blank"}
-                  className='flex items-center mt-4 lg:mt-0 ml-0 lg:ml-4 text-lg font-semibold capitalize text-black underline border-2 border-gray-300 border-solid p-3 px-6 rounded-2xl hover:bg-gray-300 hover:text-black hover:border-transparent  md:p-2 md:text-base mx-2'
+                  className='flex items-center lg:mt-0 ml-0 lg:ml-4 text-lg font-semibold capitalize text-black underline border-2 border-gray-300 border-solid p-3 px-6 rounded-2xl hover:bg-gray-300 hover:text-black hover:border-transparent  md:p-2 md:text-base mx-2'
                 >
                   Contact
                   <ContactIcon className='!w-6 ml-1 mb-1' />

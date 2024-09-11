@@ -93,7 +93,7 @@ const NavBar: React.FC = () => {
         ></span>
       </button>
 
-      <div className='w-full flex justify-between items-center lg:flex'>
+      <div className='w-full hidden justify-between items-center lg:flex'>
         <nav className='font-mono text-lg'>
           <CustomLink href='/' title='Home' className='mr-4' />
           <CustomLink href='/about' title='About' className='mx-4' />
@@ -140,7 +140,7 @@ const NavBar: React.FC = () => {
         <motion.div
           initial={{ scale: 0, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
-          className='min-w-[70vw] flex flex-col justify-between items-center fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 bg-gray-800/90 rounded-lg backdrop-blur-md py-8'
+          className='min-w-[50vw] flex flex-col justify-between items-center fixed top-10 left-20 -translate-x-1/2 -translate-y-1/2 z-30 bg-gray-800/90 rounded-2xl backdrop-blur-md py-8'
         >
           <nav className='flex flex-col items-center justify-center'>
             <CustomMobileLink href='/' title='Home' toggle={handleClick} />
@@ -154,11 +154,11 @@ const NavBar: React.FC = () => {
               title='Projects'
               toggle={handleClick}
             />
-            <CustomMobileLink
+            {/* <CustomMobileLink
               href='/achievements'
               title='Achievements'
               toggle={handleClick}
-            />
+            /> */}
           </nav>
 
           <nav className='flex items-center justify-center flex-wrap mt-4'>
