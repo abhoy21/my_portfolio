@@ -153,12 +153,12 @@ const ProjectsPage: FC = () => {
         <CustomLayout className='pt-16 '>
           <AnimatedText
             text='A well-planned project is a joy to code.'
-            className='mb-16 lg:!text-7xl sm:mb-8 sm:!text-5xl xs:text-4xl'
+            className='hidden md:block !mb-16 md:!text-7xl'
           />
           <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-16 lg:gap-8 md:gap-y-24 sm:gap-x-0'>
             <div className='col-span-12'>
               <FeaturedProject
-                title='Designed the Interactive Apple UI'
+                title='Console.blog(): Blog Website'
                 summary='Explore the dynamic world of UI design with our Apple UI website project! Delve into cutting-edge techniques using useRef hooks and GSAP animations. This project is an educational journey, crafted solely for learning and experimentation'
                 img={project6}
                 link='https://console-blog-mern-frontend.vercel.app/'
@@ -196,7 +196,7 @@ const ProjectsPage: FC = () => {
             </div>
             <div className='md:col-span-6 col-span-12'>
               <Project
-                title='Apple UI'
+                title='Designed the Interactive Apple UI'
                 img={project1}
                 link='https://apple-ui-khaki.vercel.app/'
                 github='https://github.com/abhoy21/apple_ui.git'

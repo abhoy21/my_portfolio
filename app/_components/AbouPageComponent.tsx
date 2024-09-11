@@ -54,7 +54,7 @@ const About: React.FC = () => {
         <CustomLayout className='pt-16 px-2 w-[100vw] md:w-full'>
           <AnimatedText
             text='Simple code is the best kind of code.'
-            className='hidden md:flex !mb-16 md:!text-7xl'
+            className='hidden md:block !mb-16 md:!text-7xl'
           />
 
           <div className='w-[100vw] md:w-full grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 lg:gap-16'>
