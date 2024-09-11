@@ -35,19 +35,13 @@ const FeaturedProject: FC<ProjectProps> = ({
   github,
 }) => {
   return (
-    <article
-      className='w-full flex flex-col lg:flex-row items-center justify-between rounded-2xl border border-solid border-black bg-white shadow-2xl p-6 relative 
-      rounded-br-2xl lg:p-8 xs:flex-col xs:p-4'
-    >
-      <div
-        className='absolute top-0 -right-4 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-black rounded-br-3xl 
-       xs:-right-2 sm:h-[102%] xs:w-[100%] xs:rounded-[1.5rem]'
-      />
+    <article className='hidden w-full md:flex flex-col items-center justify-between rounded-3xl border border-solid border-black bg-white shadow-2xl p-6 relative rounded-br-2xl md:flex-row md:p-8'>
+      <div className='absolute top-0 -right-4 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-black rounded-br-3xl' />
 
       <Link
         href={link}
         target='_blank'
-        className='w-full lg:w-1/2 cursor-pointer overflow-hidden rounded-lg'
+        className='w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full'
       >
         <FramerImage
           src={img}
@@ -57,7 +51,7 @@ const FeaturedProject: FC<ProjectProps> = ({
           transition={{ duration: 0.3 }}
         />
       </Link>
-      <div className='w-full lg:w-1/2 flex flex-col items-start justify-between !pl-6 lg:pl-0 lg:pt-6'>
+      <div className='w-1/2 flex flex-col items-start justify-between !pl-6 lg:w-full lg:pl-0 lg:pt-6'>
         <span className='text-sky-500 font-medium text-xl xs:text-base'>
           {type}
         </span>
@@ -66,11 +60,13 @@ const FeaturedProject: FC<ProjectProps> = ({
           target='_blank'
           className='hover:underline underline-offset-2'
         >
-          <h2 className='my-2 w-full text-left !text-4xl font-bold md:!text-2xl sm:!text-xl'>
+          <h2 className='my-2 w-full text-left !text-4xl font-bold sm:text-sm'>
             {title}
           </h2>
         </Link>
-        <p className='my-2 font-medium text-gray-700 md:!text-sm'>{summary}</p>
+        <p className='my-2 font-medium text-gray-700 sm:text-sm md:text-lg'>
+          {summary}
+        </p>
         <div className='mt-2 flex items-center'>
           <Link href={github} target='_blank' className='w-10'>
             <GithubIcon />
@@ -91,7 +87,7 @@ const FeaturedProject: FC<ProjectProps> = ({
 
 const Project: FC<ProjectProps> = ({ title, type, link, img, github }) => {
   return (
-    <article className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-black bg-white p-6 relative xs:p-4'>
+    <article className='w-[90vw] ml-3 md:ml-0 md:w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-black bg-white p-6 relative px-6 md:px-0'>
       <div className='absolute top-0 -right-4 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-black rounded-br-3xl md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]' />
       <Link
         href={link}
@@ -115,7 +111,7 @@ const Project: FC<ProjectProps> = ({ title, type, link, img, github }) => {
           target='_blank'
           className='hover:underline underline-offset-2'
         >
-          <h2 className='my-2 w-full text-left text-3xl font-bold lg:text-2xl sm:text-xl'>
+          <h2 className='my-2 w-full text-left text-3xl font-bold lg:text-2xl'>
             {title}
           </h2>
         </Link>
@@ -123,7 +119,7 @@ const Project: FC<ProjectProps> = ({ title, type, link, img, github }) => {
           <Link
             href={link}
             target='_blank'
-            className='text-lg font-semibold underline md:text-base'
+            className='text-lg font-semibold underline  md:text-base'
           >
             Visit
           </Link>
@@ -148,16 +144,25 @@ const ProjectsPage: FC = () => {
       </Head>
 
       <main className='w-full h-full flex flex-col items-center justify-center bg-white text-black'>
-        <CustomLayout className='pt-16 '>
+        <CustomLayout className='pt-16 mb-4'>
           <AnimatedText
             text='A well-planned project is a joy to code.'
             className='hidden md:block !mb-16 md:!text-7xl'
           />
           <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-16 lg:gap-8 md:gap-y-24 sm:gap-x-0'>
-            <div className='col-span-12'>
+            <div className='hidden md:block col-span-12'>
               <FeaturedProject
                 title='Console.blog(): Blog Website'
                 summary='Explore the dynamic world of UI design with our Apple UI website project! Delve into cutting-edge techniques using useRef hooks and GSAP animations. This project is an educational journey, crafted solely for learning and experimentation'
+                img={project6}
+                link='https://console-blog-mern-frontend.vercel.app/'
+                github='https://github.com/abhoy21/console_blog_mern.git'
+                type='Featured Project'
+              />
+            </div>
+            <div className='block md:hidden col-span-12'>
+              <Project
+                title='Console.blog(): Blog Website'
                 img={project6}
                 link='https://console-blog-mern-frontend.vercel.app/'
                 github='https://github.com/abhoy21/console_blog_mern.git'
@@ -182,10 +187,19 @@ const ProjectsPage: FC = () => {
                 type='Featured Project'
               />
             </div>
-            <div className='col-span-12'>
+            <div className='hidden md:block col-span-12'>
               <FeaturedProject
                 title='Designed an Intuitive Dashboard for Enhanced User Analytics'
                 summary='Explore a state-of-the-art dashboard designed for enhanced user analytics. Our platform offers comprehensive insights drawn from advanced machine learning models analyzing user reviews. Gain actionable data and trends to drive informed decisions, optimize user experience, and elevate your strategies with ease. Discover the power of intuitive design and intelligent analytics today!'
+                img={project7}
+                link='https://insightx-frontend.vercel.app/'
+                github='https://github.com/abhoy21/insightX_frontend.git'
+                type='Featured Project'
+              />
+            </div>
+            <div className='md:hidden block col-span-12'>
+              <Project
+                title='Designed an Intuitive Dashboard for Enhanced User Analytics'
                 img={project7}
                 link='https://insightx-frontend.vercel.app/'
                 github='https://github.com/abhoy21/insightX_frontend.git'
