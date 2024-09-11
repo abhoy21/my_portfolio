@@ -1,5 +1,5 @@
 "use client";
-import TransitionEffect from "@/hooks/Transitioneffect";
+
 import { motion } from "framer-motion";
 import Head from "next/head";
 import Image, { StaticImageData } from "next/image";
@@ -148,7 +148,7 @@ const ProjectsPage: FC = () => {
           content='Machine Learning Enthusiast, Full stack developer.'
         />
       </Head>
-      <TransitionEffect />
+
       <main className='w-full h-full flex flex-col items-center justify-center bg-white text-black'>
         <CustomLayout className='pt-16 '>
           <AnimatedText

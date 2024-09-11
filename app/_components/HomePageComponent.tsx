@@ -1,5 +1,5 @@
 "use client";
-import TransitionEffect from "@/hooks/Transitioneffect";
+
 import Lottie from "lottie-react";
 import Head from "next/head";
 import Link from "next/link";
@@ -15,7 +15,7 @@ const HomePageComponent: React.FC = () => {
         <title>Abhoy Sarkar</title>
         <meta name='description' content="Hi! this Abhoy's portfolio" />
       </Head>
-      <TransitionEffect />
+
       <main className='flex items-center bg-white text-black w-full min-h-screen '>
         <CustomLayout className='pt-0 md:pt-16 sm:pt-8'>
           <div className='flex flex-col lg:flex-row items-center justify-between w-full'>

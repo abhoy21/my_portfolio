@@ -1,5 +1,5 @@
 "use client";
-import TransitionEffect from "@/hooks/Transitioneffect";
+
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
@@ -49,7 +49,7 @@ const About: React.FC = () => {
           content='Machine Learning Enthusiast, Full stack developer.'
         />
       </Head>
-      <TransitionEffect />
+
       <main className='w-full flex flex-col items-center justify-center bg-white text-black'>
         <CustomLayout className='pt-16'>
           <AnimatedText
