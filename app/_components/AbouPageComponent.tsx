@@ -51,17 +51,18 @@ const About: React.FC = () => {
       </Head>
 
       <main className='w-full flex flex-col items-center justify-center bg-white text-black'>
-        <CustomLayout className='pt-16'>
+        <CustomLayout className='pt-16 px-2 w-[100vw] md:w-full'>
           <AnimatedText
-            text='Code is like humor. When you have to explain it, it’s bad.'
-            className='!mb-16 lg:!text-7xl sm:!text-5xl xs:!text-3xl sm:mb-8'
+            text='Simple code is the best kind of code.'
+            className='hidden md:flex !mb-16 md:!text-7xl'
           />
-          <div className='w-full grid grid-cols-1 gap-16 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-16'>
-            <div className='flex flex-col items-start justify-start md:col-span-1 lg:col-span-1'>
+
+          <div className='w-[100vw] md:w-full grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3 lg:gap-16'>
+            <div className='flex flex-col items-center md:items-start justify-start md:col-span-1 lg:col-span-1'>
               <h2 className='mb-4 text-3xl font-bold uppercase text-black/75'>
                 Biography
               </h2>
-              <p className='font-medium text-xl text-justify'>
+              <p className='max-w-[90vw] font-medium text-lg md:text-xl text-justify'>
                 I&apos;m Abhoy Sarkar, a computer science and engineering
                 student pursuing B.Tech. I work diligently, have a growing
                 understanding of data structures and algorithms, and have a keen
@@ -69,12 +70,12 @@ const About: React.FC = () => {
                 my latest projects and articles, showcasing my works on machine
                 learning and web development.
               </p>
-              <p className='my-4 font-medium text-xl text-justify'>
+              <p className='max-w-[90vw] my-4 font-medium text-lg md:text-xl text-justify'>
                 I believe that design is about more than just making things look
                 pretty, it&apos;s about solving problems and creating intuitive,
                 enjoyable experiences for users.
               </p>
-              <p className='font-medium text-xl text-justify'>
+              <p className='max-w-[90vw] font-medium text-lg md:text-xl text-justify'>
                 Whether I&apos;m working on a website, mobile app, a machine
                 learning model or other digital product, I bring my commitment
                 to design excellence and user-centered thinking to every project
@@ -82,7 +83,7 @@ const About: React.FC = () => {
                 and passion to your next project.
               </p>
             </div>
-            <div className='relative left-20 h-max rounded-2xl border-2 border-solid border-black bg-white p-4 md:col-span-1 md:mt-14'>
+            <div className='hidden md:block relative left-20 h-max rounded-2xl border-2 border-solid border-black bg-white p-4 md:col-span-1 md:mt-14'>
               <div className='absolute top-0 -right-4 -z-10 w-[104%] h-[104%] rounded-[2rem] bg-black' />
               <Image
                 src={profilePic}
@@ -90,7 +91,7 @@ const About: React.FC = () => {
                 className='w-full h-auto rounded-2xl'
               />
             </div>
-            <div className='flex flex-col items-end justify-between gap-8 md:col-span-1 lg:col-span-1'>
+            <div className='hidden md:flex flex-col items-end justify-between gap-8 md:col-span-1 lg:col-span-1'>
               <div className='flex flex-col items-end justify-center xl:items-center'>
                 <span className='inline-block lg:text-7xl font-extrabold md:text-5xl sm:text-4xl xs:text-3xl'>
                   <AnimatedNumbers values={500} />+
