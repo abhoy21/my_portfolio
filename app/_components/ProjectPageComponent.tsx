@@ -36,8 +36,8 @@ const FeaturedProject: FC<ProjectProps> = ({
 }) => {
   return (
     <article
-      className='w-full flex flex-row items-center justify-between rounded-3xl border border-solid border-black bg-white shadow-2xl p-6 relative rounded-br-2xl
-  lg:flex-row lg:p-8 xs:flex-col xs:rounded-2xl xs:rounded-br-3xl xs:p-4'
+      className='w-full flex flex-col lg:flex-row items-center justify-between rounded-2xl border border-solid border-black bg-white shadow-2xl p-6 relative 
+      rounded-br-2xl lg:p-8 xs:flex-col xs:p-4'
     >
       <div
         className='absolute top-0 -right-4 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-black rounded-br-3xl 
@@ -47,7 +47,7 @@ const FeaturedProject: FC<ProjectProps> = ({
       <Link
         href={link}
         target='_blank'
-        className='w-1/2 cursor-pointer overflow-hidden rounded-lg lg:w-full'
+        className='w-full lg:w-1/2 cursor-pointer overflow-hidden rounded-lg'
       >
         <FramerImage
           src={img}
@@ -57,7 +57,7 @@ const FeaturedProject: FC<ProjectProps> = ({
           transition={{ duration: 0.3 }}
         />
       </Link>
-      <div className='w-1/2 flex flex-col items-start justify-between !pl-6 lg:w-full lg:pl-0 lg:pt-6'>
+      <div className='w-full lg:w-1/2 flex flex-col items-start justify-between !pl-6 lg:pl-0 lg:pt-6'>
         <span className='text-sky-500 font-medium text-xl xs:text-base'>
           {type}
         </span>
@@ -66,13 +66,11 @@ const FeaturedProject: FC<ProjectProps> = ({
           target='_blank'
           className='hover:underline underline-offset-2'
         >
-          <h2 className='my-2 w-full text-left !text-4xl font-bold sm:text-sm'>
+          <h2 className='my-2 w-full text-left !text-4xl font-bold md:!text-2xl sm:!text-xl'>
             {title}
           </h2>
         </Link>
-        <p className='my-2 font-medium text-gray-700 sm:text-sm md:text-lg'>
-          {summary}
-        </p>
+        <p className='my-2 font-medium text-gray-700 md:!text-sm'>{summary}</p>
         <div className='mt-2 flex items-center'>
           <Link href={github} target='_blank' className='w-10'>
             <GithubIcon />
@@ -93,7 +91,7 @@ const FeaturedProject: FC<ProjectProps> = ({
 
 const Project: FC<ProjectProps> = ({ title, type, link, img, github }) => {
   return (
-    <article className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-black bg-white p-6 relative  xs:p-4'>
+    <article className='w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-black bg-white p-6 relative xs:p-4'>
       <div className='absolute top-0 -right-4 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-black rounded-br-3xl md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]' />
       <Link
         href={link}
@@ -117,7 +115,7 @@ const Project: FC<ProjectProps> = ({ title, type, link, img, github }) => {
           target='_blank'
           className='hover:underline underline-offset-2'
         >
-          <h2 className='my-2 w-full text-left text-3xl font-bold lg:text-2xl'>
+          <h2 className='my-2 w-full text-left text-3xl font-bold lg:text-2xl sm:text-xl'>
             {title}
           </h2>
         </Link>
@@ -125,7 +123,7 @@ const Project: FC<ProjectProps> = ({ title, type, link, img, github }) => {
           <Link
             href={link}
             target='_blank'
-            className='text-lg font-semibold underline  md:text-base'
+            className='text-lg font-semibold underline md:text-base'
           >
             Visit
           </Link>
