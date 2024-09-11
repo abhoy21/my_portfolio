@@ -26,8 +26,8 @@ const HomePageComponent: React.FC = () => {
                 className='w-full h-auto'
               />
             </div>
-            <div className='w-full lg:w-1/2 flex flex-col items-center lg:items-start lg:text-left'>
-              <span className='text-sm text-[#00b894] font-medium border-2 border-[#55efc4] py-2 px-4 mb-4 rounded-2xl'>
+            <div className='w-[100vw] px-6 md:px-0 lg:w-1/2 flex flex-col items-center lg:items-start lg:text-left'>
+              <span className='mt-16 text-sm text-[#00b894] font-medium border-2 border-[#55efc4] py-2 px-4 mb-4 rounded-2xl'>
                 <div className='flex items-center justify-center gap-2'>
                   <SearchIcon className='!w-6' />
                   I&apos;m open and looking for full-time opportunities and
