@@ -87,7 +87,7 @@ const FeaturedProject: FC<ProjectProps> = ({
 
 const Project: FC<ProjectProps> = ({ title, type, link, img, github }) => {
   return (
-    <article className='w-[90vw] ml-3 md:ml-0 md:w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-black bg-white p-6 relative px-6 md:px-0'>
+    <article className='w-[90vw] ml-3 md:ml-0 md:w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-black bg-white p-6 relative px-6 md:px-4'>
       <div className='absolute top-0 -right-4 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-black rounded-br-3xl md:-right-2 md:w-[101%] xs:h-[102%] xs:rounded-[1.5rem]' />
       <Link
         href={link}
