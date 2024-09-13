@@ -9,6 +9,7 @@ import project1 from "../../public/apple_ui.png";
 import project6 from "../../public/console_blog_image.png";
 import project5 from "../../public/image.png";
 import project7 from "../../public/insightx_image.png";
+import project8 from "../../public/linkedev_img.png";
 import project2 from "../../public/Sensei.png";
 import project4 from "../../public/Sloka.png";
 import AnimatedText from "./AnimatedText";
@@ -123,7 +124,7 @@ const Project: FC<ProjectProps> = ({ title, type, link, img, github }) => {
           >
             Visit
           </Link>
-          <Link href={github} target='_blank' className='w-8 md:w-6'>
+          <Link href={github} target='_blank' className='w-8 md:w-10'>
             <GithubIcon />
           </Link>
         </div>
@@ -171,19 +172,20 @@ const ProjectsPage: FC = () => {
             </div>
             <div className='md:col-span-6 col-span-12'>
               <Project
-                title='Sloka: Note taking website'
-                img={project4}
-                link='https://sloka-frontend.vercel.app/'
-                github='https://github.com/abhoy21/sloka_backend.git'
+                title='Bytdrop: A seemless File Sharing Web App'
+                img={project5}
+                link='https://bytedrop.vercel.app/'
+                github='https://github.com/abhoy21/bytedrop.git'
                 type='Featured Project'
               />
             </div>
+
             <div className='md:col-span-6 col-span-12'>
               <Project
-                title='Sensei: Find your Tutor Website'
-                img={project2}
-                link='https://sensei-frontend-three.vercel.app/'
-                github='https://github.com/abhoy21/sensei_backend.git'
+                title='Linkedev: Find GitHub Users by location'
+                img={project8}
+                link='https://linkedev.vercel.app/'
+                github='https://github.com/abhoy21/linkedev.git'
                 type='Featured Project'
               />
             </div>
@@ -217,10 +219,19 @@ const ProjectsPage: FC = () => {
             </div>
             <div className='md:col-span-6 col-span-12'>
               <Project
-                title='Bytdrop: Developed a seemless File Sharing Web App'
-                img={project5}
-                link='https://bytedrop.vercel.app/'
-                github='https://github.com/abhoy21/bytedrop.git'
+                title='Sloka: Note taking website'
+                img={project4}
+                link='https://sloka-frontend.vercel.app/'
+                github='https://github.com/abhoy21/sloka_backend.git'
+                type='Featured Project'
+              />
+            </div>
+            <div className='md:col-span-6 col-span-12'>
+              <Project
+                title='Sensei: Find your Tutor Website'
+                img={project2}
+                link='https://sensei-frontend-three.vercel.app/'
+                github='https://github.com/abhoy21/sensei_backend.git'
                 type='Featured Project'
               />
             </div>
