@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { Analytics } from "@vercel/analytics/react";
 import { AnimatePresence } from "framer-motion";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -34,7 +35,10 @@ export default function RootLayout({
         className={cn("antialiased", fontHeading.variable, fontBody.variable)}
       >
         <NavBar />
-        <AnimatePresence mode='wait'>{children}</AnimatePresence>
+        <AnimatePresence mode='wait'>
+          {children}
+          <Analytics />
+        </AnimatePresence>
         <Footer />
       </body>
     </html>
